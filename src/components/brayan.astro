@@ -1,47 +1,73 @@
 ---
 import logo from '../assets/logo.svg';
-
 ---
-<container class="flex flex-wrap ">
-	</section>
-<section class="w-full">
-	
-	
-		<h1 class="text-[#EFB810] font-sans text-9xl text-center">Brycode</h1>
-		<h2 class="font-sans text-2xl text-center mt-7">Creamos ideas impactantes e innovadoras para tu marca</h2>
-</section>
-	
 <section >
-	<div class="size-90 flex flex-row mt-20 relative left-20">
-	<img class="rounded-full bg-[#EFB810]" id="logo" src={logo.src} alt="" fetchpriority="high" />
-
-	<div>
-		<div class="flex flex-row w-128 relative size-32 ..." >
-	<div class="absolute left-100 top-0 size-64 ...">
-	<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-500 transition w-32">
+	<section class="w-full flex-none">
+		<h1 class="text-[#EFB810] font-sans text-9xl text-center">Brycode</h1>
+		<h2 class="font-sans text-2xl text-center mt-15 italic">Creamos ideas impactantes e innovadoras para tu marca</h2>
+	</section>
+	<section class="flex">
+		<div  class="w-200" >
+			<img class="m-10 w-100 rounded-full bg-[#EFB810]" id="logo" src={logo.src} alt="" fetchpriority="high" />
+		</div>
+<div class="flex w-screen ">
+	<div class="w-32 flex-auto">
+			<div>
+				<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-600 transition w-32 absolute left-200 top-80">
   Servicios
 </button>
-	</div>
-	<div class="absolute left-150 top-0 size-64 ...">
-	<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-500 transition w-32">
- Marketing
+<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-600 transition w-32 absolute left-240 top-80">
+  Marketing
 </button>
-	</div>
-	<div class="absolute left-200 top-0 size-64 ...">
-	<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-500 transition w-32">
-Historia
+<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-600 transition w-32 absolute left-280 top-80">
+  Biografía
 </button>
-	</div>
-	</div>
-	</div>
+			
 
-	
+			<div class="w-full text-2xl relative top-40 right-10">
+				 <p class="font-sans text-justify"> Somos una agencia creativa especializada en diseño web, programación y marketing digital. Nuestro propósito es ayudar a empresas y emprendedores a potenciar su presencia online a través de soluciones personalizadas, elegantes y funcionales.</p><br>
+				<p class="font-sans text-justify"> Entendemos que cada marca tiene una historia única. Por eso, ofrecemos servicios estratégicos y visuales que se adaptan a las necesidades reales de nuestros clientes, para que puedan destacar en un mercado competitivo, atraer a su público ideal y lograr resultados medibles.</p>
+
+			</div>
+			</div>
+	</div>
+		</div>
+		<section class="absolute left-20 top-175 size-64 ...">
+<form action="/registrar" method="POST" class="relative left-10">
+<label for="email" class="block text-gray-700 text-sm font-bold mb-2">
+	Correo Electrónico:
+</label>
+<input
+	type="email"
+	id="email"
+	name="email"
+	class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+	placeholder="Ingresa tu correo electrónico"
+/>
+<button
+	type="submit"
+	class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-600 transition w-32 relative top-1"
+>
+	<p>Registrar</p>
+</button>
+
+</form>
+</section>
+	</section>
 
 
-<section class="">
+
+
+
 
 </section>
-<section class="botons">
-
-</section>
-</container>
+<a 
+  href="https://wa.link/p86ra2" 
+  class="block w-24 h-24 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center text-white font-bold absolute left-300"
+>
+  <img 
+    src="src/assets/logo whatsapp.web"
+    alt="Asesoria" 
+    class="w-16 h-16"
+  />
+</a>
