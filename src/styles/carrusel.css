@@ -1,0 +1,43 @@
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      width: 100%; /* 4 imágenes = 400% */
+      animation: slideAnimation 20s infinite;
+    }
+
+    .slide {
+      width: 100%;
+      flex-shrink: 0;
+    }
+
+        @keyframes slideAnimation {
+      0%   { transform: translateX(0%); }
+      25% { transform: translateX(0%); }
+
+      25.01% { transform: translateX(-100%); }
+      50% { transform: translateX(-100%); }
+
+       50.01% { transform: translateX(-200%); }
+      75%   { transform: translateX(-200%); }
+
+      75.01% { transform: translateX(-300%); }
+      100%   { transform: translateX(-300%); }
+    }

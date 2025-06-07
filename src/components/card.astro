@@ -1,0 +1,67 @@
+---
+import Marketing from '../assets/marketing2.jpg'
+import Tracfick from '../assets/tracfik4.jpg'
+---
+<style>
+    /* From Uiverse.io by vamsidevendrakumar */ 
+.card {
+  width: 400px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: gray;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid gray;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  background-color: #949494;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: 10px solid #949494;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
+}
+</style>
+<!-- From Uiverse.io by vamsidevendrakumar --> 
+<div class="card">
+  <div class="card-inner">
+    <div class="card-front">
+      <p><img class=" w-100 " id="Marketing" src={Marketing.src} alt="" fetchpriority="high" /></p>
+    </div>
+    <div class="card-back">
+      <p><p><img class=" w-100 " id="Tracfick" src={Tracfick.src} alt="" fetchpriority="high" /></p></p>
+    </div>
+  </div>
+</div>

@@ -1,26 +1,23 @@
 ---
 import logo from '../assets/logo.svg';
+import Logo_wa from '../assets/logo_wa.webp';
 ---
-<section >
-	<section class="w-full flex-none">
+<section>
+	<section class="w-full flex-none md:w-full">
 		<h1 class="text-[#EFB810] font-sans text-9xl text-center">Brycode</h1>
 		<h2 class="font-sans text-2xl text-center mt-15 italic">Creamos ideas impactantes e innovadoras para tu marca</h2>
 	</section>
-	<section class="flex">
+	<section class="flex md:flex-1 ...">
 		<div  class="w-200" >
-			<img class="m-10 w-100 rounded-full bg-[#EFB810]" id="logo" src={logo.src} alt="" fetchpriority="high" />
+			<img class="md:m-10 w-100 rounded-full bg-[#EFB810]" id="logo" src={logo.src} alt="" fetchpriority="high" />
 		</div>
 <div class="flex w-screen ">
-	<div class="w-32 flex-auto">
-			<div>
-				<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-600 transition w-32 absolute left-200 top-80">
+	
+				<button onclick= window.location.href='#servicios'; class="bg-yellow-400 text-black text-2xl p-4 rounded-md font-semibold hover:bg-yellow-600 transition w-52 absolute left-210 mt-15">
   Servicios
 </button>
-<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-600 transition w-32 absolute left-240 top-80">
-  Marketing
-</button>
-<button class="bg-yellow-400 text-black px-6 py-2 rounded-md font-semibold hover:bg-yellow-600 transition w-32 absolute left-280 top-80">
-  Biografía
+	<button onclick= window.location.href='https://wa.me/573007325160?text=Hola,%20deseo%20adquirir%20los%20servicios%20de%20...'; class="bg-yellow-400 text-black text-2x1 p-5 rounded-md font-semibold hover:bg-yellow-600 transition w-52 absolute left-280 mt-15">
+ Adquirir Servicios
 </button>
 			
 
@@ -33,7 +30,7 @@ import logo from '../assets/logo.svg';
 	</div>
 		</div>
 		<section class="absolute left-20 top-175 size-64 ...">
-<form action="/registrar" method="POST" class="relative left-10">
+<form method="POST" action="/enviar" class="relative left-10">
 <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
 	Correo Electrónico:
 </label>
@@ -53,7 +50,7 @@ import logo from '../assets/logo.svg';
 
 </form>
 </section>
-	</section>
+	
 
 
 
@@ -61,13 +58,16 @@ import logo from '../assets/logo.svg';
 
 
 </section>
+<section class="absolute left-340 top-200 ">
 <a 
   href="https://wa.link/p86ra2" 
-  class="block w-24 h-24 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center text-white font-bold absolute left-300"
+  
 >
-  <img 
-    src="src/assets/logo whatsapp.web"
-    alt="Asesoria" 
-    class="w-16 h-16"
-  />
+  
+    <img class="w-30 rounded-full bg-[#EFB810]" id="logo" src={Logo_wa.src} alt="Asesoría" />
+
+
 </a>
+</section>
+</section>
+

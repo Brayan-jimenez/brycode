@@ -1,12 +1,25 @@
 ---
 import Brayan from '../components/brayan.astro';
+import Servicios from '../components/servicios.astro'
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/footer.astro';
+import Carrusel from '../components/carrusel.astro';
+import Up from '../assets/up.png';
 import "../styles/global.css";
 
+           
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Brayan />
+	<code id="inicio">
+	<Brayan /></code><a href="#inicio"><img class="fixed top-153 right-0 left-327 md:m-10 w-15 rounded-full bg-[#ffffff91]" id="Up" src={Up.src} alt="" fetchpriority="high" /></a>
+	<div class="mt-60 bg-gradient-to-r from-gray-300 via-blue-300 to-gray-600 h-170 w-full p-6">
+	<Carrusel />
+	</div>	
+	<code id="servicios">
+	<Servicios />
+	</code>
 </Layout>
+<Footer />
